@@ -1,0 +1,6 @@
+name: mruby-aobench-native
+description: Ao class
+author: Junichi Kajiwara
+website: https://github.com/kjunichi/mruby-aobench-native
+protocol: git
+repository: https://github.com/kjunichi/mruby-aobench-native.git
