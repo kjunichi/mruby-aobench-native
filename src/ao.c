@@ -52,6 +52,14 @@ typedef struct _Ray
 Sphere spheres[3];
 Plane  plane;
 
+#ifdef _WIN32
+#define M_PI 3.1415
+double drand48() 
+{
+    return ((double)rand())/RAND_MAX;
+}
+#endif
+
 static double vdot(vec v0, vec v1)
 {
     return v0.x * v1.x + v0.y * v1.y + v0.z * v1.z;
